@@ -63,7 +63,7 @@ class data_compile:
 
     def fillEmptyLines(self):
         
-        # Rejeter les critères ou on a pas assez de donneés
+        # Rejeter les critères où on a pas assez de donneés
         REJECT_CRITERIA_RATE = 0.5
         
 
@@ -82,6 +82,8 @@ class data_compile:
         for country in countries_to_remove:
             for criteria in self.data:
                 del self.data[criteria][country]
+
+        # Remplacer par la moyenne dans les critères ou on a assez de données mais pas toutes 
         
         
 
