@@ -1,0 +1,3 @@
+Critère 1: 1
+Critère 2: 5
+Critère 3: 9
