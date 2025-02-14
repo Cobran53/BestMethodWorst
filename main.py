@@ -49,6 +49,7 @@ class data_compile:
         while True:
             try:
                 choice = int(input("Entrez le numéro du critère le plus important : ")) - 1
+                print()
                 if 0 <= choice < len(criteria):
                     break
                 else:
@@ -59,14 +60,15 @@ class data_compile:
         
         self.mostImportantCriteriaNotes = {self.mostImportantCriteria: 1}
 
-        print("Évaluez l'importance de chaque critère par rapport au critère le plus important, de 1 à 9, \n "
-              "avec 1 : le critère le plus important est aussi important que ce critère, \n"
-              "et 9 : le meilleur criètre est extremement plus important que ce critère)")
+        print("Évaluez l'importance de chaque critère par rapport au critère le plus important, de 1 à 9, avec \n" 
+              "• 1 : le meilleur critère est aussi important que ce critère, \n"
+              "• 9 : le meilleur critère est extremement plus important que ce critère)\n")
         for crit in criteria:
             if crit != self.mostImportantCriteria:
                 while True:
                     try:
-                        note = int(input(f"Évaluez l'importance de {crit} par rapport au critère le plus important (1-9) :"))
+                        note = int(input(f"Évaluez l'importance de {crit} par rapport au critère le plus important (1-9) : "))
+                        print()
                         if 1 <= note <= 9:
                             break
                         else:
@@ -102,11 +104,15 @@ class data_compile:
         
         self.leastImportantCriteriaNotes = {self.leastImportantCriteria: 1}
 
+        print("Évaluez l'importance de chaque critère par rapport au critère le moins important, de 1 à 9, avec \n" 
+              "• 1 : le pire critère est aussi important que ce critère, \n"
+              "• 9 : le pire critère est extrêmement moins important que ce critère)\n")
         for crit in criteria:
             if crit != self.leastImportantCriteria:
                 while True:
                     try:
                         note = int(input(f"Évaluez l'importance de {crit} par rapport au critère le moins important (1-9) : "))
+                        print()
                         if 1 <= note <= 9:
                             break
                         else:
@@ -130,6 +136,8 @@ class data_compile:
         weights = bw_method(mic, lic, eps_penalty=1, verbose=True)
         
         self.actualWeights = {crit: weights[i] for i, crit in enumerate(criteria)}
+
+        print(self.actualWeights)
 
     def calculateScoresByCountries(self) -> dict[Country, float]:
         self.countriesScores = {
