@@ -1,0 +1,20 @@
+Critere 1:
+  Pays A: 0.8
+  Pays B: 0.6
+  Pays C: 0.9
+  Pays sans donnees: null
+Critere 2:
+  Pays A: 0.7
+  Pays B: 0.8
+  Pays C: 0.6
+  Pays sans donnees: null
+Critere 3:
+  Pays A: 0.9
+  Pays B: 0.5
+  Pays C: 0.7
+  Pays sans donnees: null
+Critere sans donnees:
+  Pays A: null
+  Pays B: null
+  Pays C: null
+  Pays sans donnees: null
