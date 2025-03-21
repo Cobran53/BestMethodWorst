@@ -7,6 +7,7 @@ from pyDecision.algorithm import bw_method
 import yaml
 from pprint import pprint
 from tkinter import Tk, filedialog
+from tkinter.messagebox import askquestion
 
 
 
@@ -39,16 +40,14 @@ class data_compile:
         self.generateActualWeights()
         self.calculateScoresByCountries()
 
-        print(self.countriesScores)
+        pprint({country: float(score) for country, score in self.countriesScores.items()})
 
     def askUserIfImport(self) -> bool: 
-        while True:
-            choice = input("Voulez-vous importer les poids des critères à partir d'un fichier YAML ? (oui/non) : ").strip().lower()
-            if choice in ["oui", "o", "y", "yes"]:
-                return True
-            elif choice in ['non', "no", "n"]:
-                return False
-            print("Réponse incorrecte.")
+        response = askquestion("Importer les poids des critères", "Voulez-vous importer les poids des critères à partir d'un fichier YAML ?")
+        if response == "cancel":
+            print("Fermeture du programme.")
+            exit()
+        return response == "yes"
 
     def importMICAndLIC(self):
         root = Tk()
@@ -209,7 +208,7 @@ class data_compile:
         
         self.actualWeights = {crit: weights[i] for i, crit in enumerate(criteria)}
 
-        print(self.actualWeights)
+        pprint({criterion: float(weight) for criterion, weight in self.actualWeights.items()})
 
     def calculateScoresByCountries(self) -> dict[Country, float]:
         self.countriesScores = {
