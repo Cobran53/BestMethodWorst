@@ -8,33 +8,91 @@ from pyDecision.algorithm import bw_method
 
 class data_compile:
     def __init__(self) -> None:
-        self.data: dict[Criterion, dict[Country, float]]
+        self.data: dict[Criterion, dict[Country, float|None]]
         # TODO
 
         self.data = {
             "Critère 1": {
                 "Pays A": 0.8,
                 "Pays B": 0.6,
-                "Pays C": 0.9
+                "Pays C": 0.9, 
+                "Pays sans données": None,
             },
             "Critère 2": {
                 "Pays A": 0.7,
                 "Pays B": 0.8,
-                "Pays C": 0.6
+                "Pays C": 0.6, 
+                "Pays sans données": None,
             },
             "Critère 3": {
                 "Pays A": 0.9,
                 "Pays B": 0.5,
-                "Pays C": 0.7
+                "Pays C": 0.7, 
+                "Pays sans données": None,
+            }, 
+            "Critère sans données": {
+
             }
         }
-
+        """self.data = pd.DataFrame({
+            "Critère 1": {
+            "Pays A": 0.8,
+            "Pays B": 0.6,
+            "Pays C": 0.9, 
+            "Pays sans données": None,
+            },
+            "Critère 2": {
+            "Pays A": 0.7,
+            "Pays B": 0.8,
+            "Pays C": 0.6, 
+            "Pays sans données": None,
+            },
+            "Critère 3": {
+            "Pays A": 0.9,
+            "Pays B": 0.5,
+            "Pays C": 0.7, 
+            "Pays sans données": None,
+            }
+        }).T*/"""
         self.generateMostImportantCriteriaWeights()
         self.generateLeastImportantCriteriaWeights()
         self.generateActualWeights()
         self.calculateScoresByCountries()
 
         print(self.countriesScores)
+
+    def fillEmptyLines(self):
+        
+        # Rejeter les critères ou on a pas assez de donneés
+        REJECT_CRITERIA_RATE = 0.5
+        
+        criteria_to_remove = []
+        for criteria, countries in self.data.items():
+            filled_country_count = sum(1 for value in countries.values() if value is not None)
+            if filled_country_count / len(countries) < REJECT_CRITERIA_RATE:
+                criteria_to_remove.append(criteria)
+
+        for criteria in criteria_to_remove:
+            del self.data[criteria]
+
+
+        # Rejeter les pays où on a pas assez de données
+        REJECT_COUNTRY_RATE = 0.5
+        
+        first_criteria = next(iter(self.data))
+
+        countries_to_remove = []
+        for country in self.data[first_criteria].keys():
+            filled_criteria_count = sum(1 for criteria in self.data if self.data[criteria][country] is not None)
+            if filled_criteria_count / len(self.data) < REJECT_COUNTRY_RATE:
+                countries_to_remove.append(country)
+
+        for country in countries_to_remove:
+            for criteria in self.data:
+                del self.data[criteria][country]
+        
+        
+
     def generateMostImportantCriteriaWeights(self) -> dict[Criterion, Note]:
         self.mostImportantCriteria: Criterion # nous déterminons qu'un des critères est le plus important
         self.mostImportantCriteriaNotes: dict[Criterion, Note] # pour chaque autre critère,
