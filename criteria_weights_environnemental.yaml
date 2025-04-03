@@ -1,0 +1,30 @@
+most_important_criteria:
+    air_quality_index: 9
+    green_energy_mix_ratio: 9
+    ideal_humidity: 7
+    temperature: 7
+    ratio_pertes_distribution: 5
+    IDH: 3
+    company_taxes: 2
+    cost_of_living_index: 2
+    housing_price: 3
+    land_prices: 3
+    world_risk_index: 5
+    global_peace_index: 4
+    electricity_prices: 4
+    ratio_import_electricite: 4
+least_important_criteria:
+    air_quality_index: 1
+    green_energy_mix_ratio: 1
+    ideal_humidity: 3
+    temperature: 3
+    ratio_pertes_distribution: 2
+    IDH: 9
+    company_taxes: 9
+    cost_of_living_index: 8
+    housing_price: 7
+    land_prices: 7
+    world_risk_index: 6
+    global_peace_index: 6
+    electricity_prices: 6
+    ratio_import_electricite: 6
