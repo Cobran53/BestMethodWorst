@@ -8,6 +8,7 @@ import yaml
 from pprint import pprint
 from tkinter import Tk, filedialog
 from tkinter.messagebox import askquestion
+import csv
 
 
 
@@ -24,6 +25,8 @@ class data_compile:
             pprint(self.data)
             print()
         
+        # self.replaceCountryByCountryCode()
+
         self.fillEmptyLines()
 
         if self.isDebug:
@@ -41,6 +44,30 @@ class data_compile:
         self.calculateScoresByCountries()
 
         pprint({country: float(score) for country, score in self.countriesScores.items()})
+
+    def replaceCountryByCountryCode(self):
+        
+        # Load the country codes from the CSV file
+        self.country_code_map = {}
+        with open("country_code.csv", "r", encoding="utf-8") as csvfile:
+            reader = csv.reader(csvfile, delimiter=';')
+            next(reader)  # Skip the header row
+            for row in reader:
+                country_code = row[-1]  # The last column contains the country code
+                for name in row[:-1]:  # Iterate over all alternate names
+                    if name:  # Skip empty names
+                        self.country_code_map[name.strip()] = country_code
+
+        # Replace country names in self.data with their corresponding country codes
+        for criteria in self.data:
+            updated_data = {}
+            for country, value in self.data[criteria].items():
+                country_code = self.country_code_map.get(country, country)  # Default to the original name if not found
+                if country_code == country:  # If no replacement was made
+                    print(f"Failed to replace country name: {country}")
+            
+            updated_data[country_code] = value
+            self.data[criteria] = updated_data
 
     def askUserIfImport(self) -> bool: 
         response = askquestion("Importer les poids des critères", "Voulez-vous importer les poids des critères à partir d'un fichier YAML ?")
