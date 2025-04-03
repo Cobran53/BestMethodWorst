@@ -1,0 +1,928 @@
+Housing_Prices:
+  SYR:
+    Country: Syria
+    Price_To_Income_Ratio: 115.1
+    Gross_Rental_Yield_City_Centre: 2.4
+    Gross_Rental_Yield_Outside_of_Centre: 3.8
+    Price_To_Rent_Ratio_City_Centre: 41.1
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 26.3
+    Mortgage_As_A_Percentage_Of_Income: 1746.8
+    Affordability_Index: 0.1
+  CUB:
+    Country: Cuba
+    Price_To_Income_Ratio: 48.0
+    Gross_Rental_Yield_City_Centre: 24.0
+    Gross_Rental_Yield_Outside_of_Centre: 28.3
+    Price_To_Rent_Ratio_City_Centre: 4.2
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 3.5
+    Mortgage_As_A_Percentage_Of_Income: 503.5
+    Affordability_Index: 0.2
+  ETH:
+    Country: Ethiopia
+    Price_To_Income_Ratio: 47.1
+    Gross_Rental_Yield_City_Centre: 6.0
+    Gross_Rental_Yield_Outside_of_Centre: 5.4
+    Price_To_Rent_Ratio_City_Centre: 16.7
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 18.6
+    Mortgage_As_A_Percentage_Of_Income: 762.3
+    Affordability_Index: 0.1
+  CMR:
+    Country: Cameroon
+    Price_To_Income_Ratio: 46.6
+    Gross_Rental_Yield_City_Centre: 9.2
+    Gross_Rental_Yield_Outside_of_Centre: 11.4
+    Price_To_Rent_Ratio_City_Centre: 10.8
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 8.8
+    Mortgage_As_A_Percentage_Of_Income: 907.8
+    Affordability_Index: 0.1
+  LKA:
+    Country: Sri Lanka
+    Price_To_Income_Ratio: 34.2
+    Gross_Rental_Yield_City_Centre: 3.7
+    Gross_Rental_Yield_Outside_of_Centre: 2.7
+    Price_To_Rent_Ratio_City_Centre: 26.7
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 36.5
+    Mortgage_As_A_Percentage_Of_Income: 603.5
+    Affordability_Index: 0.2
+  NPL:
+    Country: Nepal
+    Price_To_Income_Ratio: 32.1
+    Gross_Rental_Yield_City_Centre: 1.7
+    Gross_Rental_Yield_Outside_of_Centre: 1.8
+    Price_To_Rent_Ratio_City_Centre: 60.0
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 56.3
+    Mortgage_As_A_Percentage_Of_Income: 447.4
+    Affordability_Index: 0.2
+  HKG:
+    Country: Hong Kong
+    Price_To_Income_Ratio: 29.1
+    Gross_Rental_Yield_City_Centre: 1.9
+    Gross_Rental_Yield_Outside_of_Centre: 2.2
+    Price_To_Rent_Ratio_City_Centre: 52.2
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 44.7
+    Mortgage_As_A_Percentage_Of_Income: 211.2
+    Affordability_Index: 0.5
+  CHN:
+    Country: China
+    Price_To_Income_Ratio: 28.5
+    Gross_Rental_Yield_City_Centre: 1.6
+    Gross_Rental_Yield_Outside_of_Centre: 1.9
+    Price_To_Rent_Ratio_City_Centre: 62.5
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 51.8
+    Mortgage_As_A_Percentage_Of_Income: 212.9
+    Affordability_Index: 0.5
+  VNM:
+    Country: Vietnam
+    Price_To_Income_Ratio: 25.8
+    Gross_Rental_Yield_City_Centre: 3.0
+    Gross_Rental_Yield_Outside_of_Centre: 3.6
+    Price_To_Rent_Ratio_City_Centre: 33.3
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 28.0
+    Mortgage_As_A_Percentage_Of_Income: 296.2
+    Affordability_Index: 0.3
+  THA:
+    Country: Thailand
+    Price_To_Income_Ratio: 25.2
+    Gross_Rental_Yield_City_Centre: 2.9
+    Gross_Rental_Yield_Outside_of_Centre: 3.2
+    Price_To_Rent_Ratio_City_Centre: 34.0
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 31.5
+    Mortgage_As_A_Percentage_Of_Income: 213.4
+    Affordability_Index: 0.5
+  SGP:
+    Country: Singapore
+    Price_To_Income_Ratio: 23.2
+    Gross_Rental_Yield_City_Centre: 2.9
+    Gross_Rental_Yield_Outside_of_Centre: 3.1
+    Price_To_Rent_Ratio_City_Centre: 34.2
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 32.4
+    Mortgage_As_A_Percentage_Of_Income: 158.4
+    Affordability_Index: 0.6
+  PHL:
+    Country: Philippines
+    Price_To_Income_Ratio: 22.2
+    Gross_Rental_Yield_City_Centre: 3.0
+    Gross_Rental_Yield_Outside_of_Centre: 3.5
+    Price_To_Rent_Ratio_City_Centre: 33.1
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 28.5
+    Mortgage_As_A_Percentage_Of_Income: 211.5
+    Affordability_Index: 0.5
+  KOR:
+    Country: South Korea
+    Price_To_Income_Ratio: 22.2
+    Gross_Rental_Yield_City_Centre: 1.2
+    Gross_Rental_Yield_Outside_of_Centre: 1.1
+    Price_To_Rent_Ratio_City_Centre: 82.8
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 88.1
+    Mortgage_As_A_Percentage_Of_Income: 170.6
+    Affordability_Index: 0.6
+  TWN:
+    Country: Taiwan
+    Price_To_Income_Ratio: 21.3
+    Gross_Rental_Yield_City_Centre: 1.4
+    Gross_Rental_Yield_Outside_of_Centre: 1.5
+    Price_To_Rent_Ratio_City_Centre: 74.1
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 67.2
+    Mortgage_As_A_Percentage_Of_Income: 129.7
+    Affordability_Index: 0.8
+  IRN:
+    Country: Iran
+    Price_To_Income_Ratio: 19.7
+    Gross_Rental_Yield_City_Centre: 6.3
+    Gross_Rental_Yield_Outside_of_Centre: 6.8
+    Price_To_Rent_Ratio_City_Centre: 15.9
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 14.7
+    Mortgage_As_A_Percentage_Of_Income: 454.8
+    Affordability_Index: 0.2
+  ARM:
+    Country: Armenia
+    Price_To_Income_Ratio: 19.4
+    Gross_Rental_Yield_City_Centre: 5.4
+    Gross_Rental_Yield_Outside_of_Centre: 7.5
+    Price_To_Rent_Ratio_City_Centre: 18.4
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 13.3
+    Mortgage_As_A_Percentage_Of_Income: 308.3
+    Affordability_Index: 0.3
+  MUS:
+    Country: Mauritius
+    Price_To_Income_Ratio: 18.5
+    Gross_Rental_Yield_City_Centre: 3.3
+    Gross_Rental_Yield_Outside_of_Centre: 3.3
+    Price_To_Rent_Ratio_City_Centre: 30.5
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 30.7
+    Mortgage_As_A_Percentage_Of_Income: 159.2
+    Affordability_Index: 0.6
+  PER:
+    Country: Peru
+    Price_To_Income_Ratio: 18.4
+    Gross_Rental_Yield_City_Centre: 5.2
+    Gross_Rental_Yield_Outside_of_Centre: 4.3
+    Price_To_Rent_Ratio_City_Centre: 19.2
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 23.2
+    Mortgage_As_A_Percentage_Of_Income: 218.4
+    Affordability_Index: 0.5
+  EGY:
+    Country: Egypt
+    Price_To_Income_Ratio: 18.2
+    Gross_Rental_Yield_City_Centre: 5.6
+    Gross_Rental_Yield_Outside_of_Centre: 5.7
+    Price_To_Rent_Ratio_City_Centre: 17.9
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 17.7
+    Mortgage_As_A_Percentage_Of_Income: 285.2
+    Affordability_Index: 0.4
+  COL:
+    Country: Colombia
+    Price_To_Income_Ratio: 18.1
+    Gross_Rental_Yield_City_Centre: 5.2
+    Gross_Rental_Yield_Outside_of_Centre: 5.1
+    Price_To_Rent_Ratio_City_Centre: 19.3
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 19.5
+    Mortgage_As_A_Percentage_Of_Income: 261.8
+    Affordability_Index: 0.4
+  ARG:
+    Country: Argentina
+    Price_To_Income_Ratio: 17.7
+    Gross_Rental_Yield_City_Centre: 4.2
+    Gross_Rental_Yield_Outside_of_Centre: 4.3
+    Price_To_Rent_Ratio_City_Centre: 23.6
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 23.4
+    Mortgage_As_A_Percentage_Of_Income: 1350.4
+    Affordability_Index: 0.1
+  SLV:
+    Country: El Salvador
+    Price_To_Income_Ratio: 17.5
+    Gross_Rental_Yield_City_Centre: 6.2
+    Gross_Rental_Yield_Outside_of_Centre: 9.5
+    Price_To_Rent_Ratio_City_Centre: 16.1
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 10.5
+    Mortgage_As_A_Percentage_Of_Income: 195.9
+    Affordability_Index: 0.5
+  DZA:
+    Country: Algeria
+    Price_To_Income_Ratio: 16.7
+    Gross_Rental_Yield_City_Centre: 2.8
+    Gross_Rental_Yield_Outside_of_Centre: 3.2
+    Price_To_Rent_Ratio_City_Centre: 35.2
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 31.2
+    Mortgage_As_A_Percentage_Of_Income: 147.6
+    Affordability_Index: 0.7
+  DOM:
+    Country: Dominican Republic
+    Price_To_Income_Ratio: 16.5
+    Gross_Rental_Yield_City_Centre: 6.7
+    Gross_Rental_Yield_Outside_of_Centre: 5.0
+    Price_To_Rent_Ratio_City_Centre: 15.0
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 20.1
+    Mortgage_As_A_Percentage_Of_Income: 234.9
+    Affordability_Index: 0.4
+  SRB:
+    Country: Serbia
+    Price_To_Income_Ratio: 16.0
+    Gross_Rental_Yield_City_Centre: 3.8
+    Gross_Rental_Yield_Outside_of_Centre: 3.9
+    Price_To_Rent_Ratio_City_Centre: 26.1
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 25.7
+    Mortgage_As_A_Percentage_Of_Income: 146.5
+    Affordability_Index: 0.7
+  CHL:
+    Country: Chile
+    Price_To_Income_Ratio: 15.6
+    Gross_Rental_Yield_City_Centre: 4.4
+    Gross_Rental_Yield_Outside_of_Centre: 3.8
+    Price_To_Rent_Ratio_City_Centre: 22.9
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 26.1
+    Mortgage_As_A_Percentage_Of_Income: 126.3
+    Affordability_Index: 0.8
+  AZE:
+    Country: Azerbaijan
+    Price_To_Income_Ratio: 15.6
+    Gross_Rental_Yield_City_Centre: 5.0
+    Gross_Rental_Yield_Outside_of_Centre: 5.2
+    Price_To_Rent_Ratio_City_Centre: 20.0
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 19.1
+    Mortgage_As_A_Percentage_Of_Income: 167.8
+    Affordability_Index: 0.6
+  ALB:
+    Country: Albania
+    Price_To_Income_Ratio: 15.3
+    Gross_Rental_Yield_City_Centre: 4.6
+    Gross_Rental_Yield_Outside_of_Centre: 5.5
+    Price_To_Rent_Ratio_City_Centre: 21.9
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 18.1
+    Mortgage_As_A_Percentage_Of_Income: 127.8
+    Affordability_Index: 0.8
+  BRA:
+    Country: Brazil
+    Price_To_Income_Ratio: 15.2
+    Gross_Rental_Yield_City_Centre: 4.8
+    Gross_Rental_Yield_Outside_of_Centre: 4.7
+    Price_To_Rent_Ratio_City_Centre: 21.0
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 21.4
+    Mortgage_As_A_Percentage_Of_Income: 188.7
+    Affordability_Index: 0.5
+  VEN:
+    Country: Venezuela
+    Price_To_Income_Ratio: 15.1
+    Gross_Rental_Yield_City_Centre: 9.0
+    Gross_Rental_Yield_Outside_of_Centre: 7.3
+    Price_To_Rent_Ratio_City_Centre: 11.1
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 13.7
+    Mortgage_As_A_Percentage_Of_Income: 363.5
+    Affordability_Index: 0.3
+  LBN:
+    Country: Lebanon
+    Price_To_Income_Ratio: 15.0
+    Gross_Rental_Yield_City_Centre: 6.7
+    Gross_Rental_Yield_Outside_of_Centre: 6.9
+    Price_To_Rent_Ratio_City_Centre: 14.9
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 14.5
+    Mortgage_As_A_Percentage_Of_Income: 185.5
+    Affordability_Index: 0.5
+  IDN:
+    Country: Indonesia
+    Price_To_Income_Ratio: 14.9
+    Gross_Rental_Yield_City_Centre: 6.2
+    Gross_Rental_Yield_Outside_of_Centre: 6.4
+    Price_To_Rent_Ratio_City_Centre: 16.1
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 15.6
+    Mortgage_As_A_Percentage_Of_Income: 163.3
+    Affordability_Index: 0.6
+  PRT:
+    Country: Portugal
+    Price_To_Income_Ratio: 14.7
+    Gross_Rental_Yield_City_Centre: 5.6
+    Gross_Rental_Yield_Outside_of_Centre: 6.0
+    Price_To_Rent_Ratio_City_Centre: 17.8
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 16.6
+    Mortgage_As_A_Percentage_Of_Income: 115.5
+    Affordability_Index: 0.9
+  RUS:
+    Country: Russia
+    Price_To_Income_Ratio: 14.3
+    Gross_Rental_Yield_City_Centre: 4.5
+    Gross_Rental_Yield_Outside_of_Centre: 4.2
+    Price_To_Rent_Ratio_City_Centre: 22.2
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 23.6
+    Mortgage_As_A_Percentage_Of_Income: 218.5
+    Affordability_Index: 0.5
+  PAK:
+    Country: Pakistan
+    Price_To_Income_Ratio: 14.3
+    Gross_Rental_Yield_City_Centre: 4.5
+    Gross_Rental_Yield_Outside_of_Centre: 4.0
+    Price_To_Rent_Ratio_City_Centre: 22.2
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 25.3
+    Mortgage_As_A_Percentage_Of_Income: 292.6
+    Affordability_Index: 0.3
+  SVK:
+    Country: Slovakia
+    Price_To_Income_Ratio: 14.0
+    Gross_Rental_Yield_City_Centre: 3.4
+    Gross_Rental_Yield_Outside_of_Centre: 3.6
+    Price_To_Rent_Ratio_City_Centre: 29.2
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 27.9
+    Mortgage_As_A_Percentage_Of_Income: 104.9
+    Affordability_Index: 1.0
+  KGZ:
+    Country: Kyrgyzstan
+    Price_To_Income_Ratio: 13.9
+    Gross_Rental_Yield_City_Centre: 8.5
+    Gross_Rental_Yield_Outside_of_Centre: 8.7
+    Price_To_Rent_Ratio_City_Centre: 11.8
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 11.5
+    Mortgage_As_A_Percentage_Of_Income: 273.5
+    Affordability_Index: 0.4
+  ISR:
+    Country: Israel
+    Price_To_Income_Ratio: 13.7
+    Gross_Rental_Yield_City_Centre: 2.9
+    Gross_Rental_Yield_Outside_of_Centre: 2.8
+    Price_To_Rent_Ratio_City_Centre: 35.1
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 35.9
+    Mortgage_As_A_Percentage_Of_Income: 106.5
+    Affordability_Index: 0.9
+  UKR:
+    Country: Ukraine
+    Price_To_Income_Ratio: 13.6
+    Gross_Rental_Yield_City_Centre: 5.4
+    Gross_Rental_Yield_Outside_of_Centre: 5.5
+    Price_To_Rent_Ratio_City_Centre: 18.7
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 18.2
+    Mortgage_As_A_Percentage_Of_Income: 253.3
+    Affordability_Index: 0.4
+  CZE:
+    Country: Czech Republic
+    Price_To_Income_Ratio: 13.5
+    Gross_Rental_Yield_City_Centre: 3.4
+    Gross_Rental_Yield_Outside_of_Centre: 3.6
+    Price_To_Rent_Ratio_City_Centre: 29.2
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 27.5
+    Mortgage_As_A_Percentage_Of_Income: 112.2
+    Affordability_Index: 0.9
+  UZB:
+    Country: Uzbekistan
+    Price_To_Income_Ratio: 13.5
+    Gross_Rental_Yield_City_Centre: 7.6
+    Gross_Rental_Yield_Outside_of_Centre: 8.7
+    Price_To_Rent_Ratio_City_Centre: 13.2
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 11.6
+    Mortgage_As_A_Percentage_Of_Income: 307.7
+    Affordability_Index: 0.3
+  MAR:
+    Country: Morocco
+    Price_To_Income_Ratio: 13.4
+    Gross_Rental_Yield_City_Centre: 5.2
+    Gross_Rental_Yield_Outside_of_Centre: 5.0
+    Price_To_Rent_Ratio_City_Centre: 19.1
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 20.1
+    Mortgage_As_A_Percentage_Of_Income: 105.8
+    Affordability_Index: 0.9
+  MDA:
+    Country: Moldova
+    Price_To_Income_Ratio: 13.3
+    Gross_Rental_Yield_City_Centre: 6.8
+    Gross_Rental_Yield_Outside_of_Centre: 6.6
+    Price_To_Rent_Ratio_City_Centre: 14.8
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 15.2
+    Mortgage_As_A_Percentage_Of_Income: 149.5
+    Affordability_Index: 0.7
+  BIH:
+    Country: Bosnia And Herzegovina
+    Price_To_Income_Ratio: 13.2
+    Gross_Rental_Yield_City_Centre: 2.7
+    Gross_Rental_Yield_Outside_of_Centre: 2.8
+    Price_To_Rent_Ratio_City_Centre: 36.6
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 35.5
+    Mortgage_As_A_Percentage_Of_Income: 99.7
+    Affordability_Index: 1.0
+  URY:
+    Country: Uruguay
+    Price_To_Income_Ratio: 13.0
+    Gross_Rental_Yield_City_Centre: 4.4
+    Gross_Rental_Yield_Outside_of_Centre: 4.1
+    Price_To_Rent_Ratio_City_Centre: 22.5
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 24.6
+    Mortgage_As_A_Percentage_Of_Income: 114.1
+    Affordability_Index: 0.9
+  SVN:
+    Country: Slovenia
+    Price_To_Income_Ratio: 13.0
+    Gross_Rental_Yield_City_Centre: 3.7
+    Gross_Rental_Yield_Outside_of_Centre: 3.8
+    Price_To_Rent_Ratio_City_Centre: 26.8
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 26.1
+    Mortgage_As_A_Percentage_Of_Income: 94.0
+    Affordability_Index: 1.1
+  HUN:
+    Country: Hungary
+    Price_To_Income_Ratio: 13.0
+    Gross_Rental_Yield_City_Centre: 3.5
+    Gross_Rental_Yield_Outside_of_Centre: 3.8
+    Price_To_Rent_Ratio_City_Centre: 28.3
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 26.7
+    Mortgage_As_A_Percentage_Of_Income: 127.1
+    Affordability_Index: 0.8
+  GRC:
+    Country: Greece
+    Price_To_Income_Ratio: 13.0
+    Gross_Rental_Yield_City_Centre: 3.7
+    Gross_Rental_Yield_Outside_of_Centre: 3.7
+    Price_To_Rent_Ratio_City_Centre: 26.8
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 26.7
+    Mortgage_As_A_Percentage_Of_Income: 99.2
+    Affordability_Index: 1.0
+  MNE:
+    Country: Montenegro
+    Price_To_Income_Ratio: 12.9
+    Gross_Rental_Yield_City_Centre: 5.7
+    Gross_Rental_Yield_Outside_of_Centre: 5.6
+    Price_To_Rent_Ratio_City_Centre: 17.5
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 18.0
+    Mortgage_As_A_Percentage_Of_Income: 109.7
+    Affordability_Index: 0.9
+  BLR:
+    Country: Belarus
+    Price_To_Income_Ratio: 12.8
+    Gross_Rental_Yield_City_Centre: 5.3
+    Gross_Rental_Yield_Outside_of_Centre: 5.2
+    Price_To_Rent_Ratio_City_Centre: 19.0
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 19.3
+    Mortgage_As_A_Percentage_Of_Income: 204.7
+    Affordability_Index: 0.5
+  HRV:
+    Country: Croatia
+    Price_To_Income_Ratio: 12.8
+    Gross_Rental_Yield_City_Centre: 3.5
+    Gross_Rental_Yield_Outside_of_Centre: 3.7
+    Price_To_Rent_Ratio_City_Centre: 28.4
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 27.2
+    Mortgage_As_A_Percentage_Of_Income: 95.8
+    Affordability_Index: 1.0
+  BGD:
+    Country: Bangladesh
+    Price_To_Income_Ratio: 12.8
+    Gross_Rental_Yield_City_Centre: 3.0
+    Gross_Rental_Yield_Outside_of_Centre: 3.0
+    Price_To_Rent_Ratio_City_Centre: 33.7
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 33.6
+    Mortgage_As_A_Percentage_Of_Income: 147.1
+    Affordability_Index: 0.7
+  GEO:
+    Country: Georgia
+    Price_To_Income_Ratio: 12.7
+    Gross_Rental_Yield_City_Centre: 8.1
+    Gross_Rental_Yield_Outside_of_Centre: 8.8
+    Price_To_Rent_Ratio_City_Centre: 12.3
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 11.4
+    Mortgage_As_A_Percentage_Of_Income: 165.4
+    Affordability_Index: 0.6
+  LTU:
+    Country: Lithuania
+    Price_To_Income_Ratio: 12.4
+    Gross_Rental_Yield_City_Centre: 3.4
+    Gross_Rental_Yield_Outside_of_Centre: 3.9
+    Price_To_Rent_Ratio_City_Centre: 29.5
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 25.9
+    Mortgage_As_A_Percentage_Of_Income: 91.9
+    Affordability_Index: 1.1
+  MKD:
+    Country: North Macedonia
+    Price_To_Income_Ratio: 12.3
+    Gross_Rental_Yield_City_Centre: 3.5
+    Gross_Rental_Yield_Outside_of_Centre: 3.6
+    Price_To_Rent_Ratio_City_Centre: 28.2
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 27.9
+    Mortgage_As_A_Percentage_Of_Income: 96.5
+    Affordability_Index: 1.0
+  TUN:
+    Country: Tunisia
+    Price_To_Income_Ratio: 12.2
+    Gross_Rental_Yield_City_Centre: 4.8
+    Gross_Rental_Yield_Outside_of_Centre: 5.6
+    Price_To_Rent_Ratio_City_Centre: 21.0
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 17.9
+    Mortgage_As_A_Percentage_Of_Income: 153.2
+    Affordability_Index: 0.7
+  JPN:
+    Country: Japan
+    Price_To_Income_Ratio: 12.2
+    Gross_Rental_Yield_City_Centre: 2.1
+    Gross_Rental_Yield_Outside_of_Centre: 2.4
+    Price_To_Rent_Ratio_City_Centre: 47.1
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 42.4
+    Mortgage_As_A_Percentage_Of_Income: 72.9
+    Affordability_Index: 1.4
+  BOL:
+    Country: Bolivia
+    Price_To_Income_Ratio: 12.0
+    Gross_Rental_Yield_City_Centre: 7.2
+    Gross_Rental_Yield_Outside_of_Centre: 5.9
+    Price_To_Rent_Ratio_City_Centre: 13.9
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 16.9
+    Mortgage_As_A_Percentage_Of_Income: 114.6
+    Affordability_Index: 0.9
+  ECU:
+    Country: Ecuador
+    Price_To_Income_Ratio: 11.9
+    Gross_Rental_Yield_City_Centre: 5.8
+    Gross_Rental_Yield_Outside_of_Centre: 5.2
+    Price_To_Rent_Ratio_City_Centre: 17.1
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 19.3
+    Mortgage_As_A_Percentage_Of_Income: 137.5
+    Affordability_Index: 0.7
+  MEX:
+    Country: Mexico
+    Price_To_Income_Ratio: 11.8
+    Gross_Rental_Yield_City_Centre: 7.3
+    Gross_Rental_Yield_Outside_of_Centre: 7.5
+    Price_To_Rent_Ratio_City_Centre: 13.7
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 13.4
+    Mortgage_As_A_Percentage_Of_Income: 150.0
+    Affordability_Index: 0.7
+  AUT:
+    Country: Austria
+    Price_To_Income_Ratio: 11.5
+    Gross_Rental_Yield_City_Centre: 3.0
+    Gross_Rental_Yield_Outside_of_Centre: 3.2
+    Price_To_Rent_Ratio_City_Centre: 33.8
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 31.5
+    Mortgage_As_A_Percentage_Of_Income: 81.2
+    Affordability_Index: 1.2
+  EST:
+    Country: Estonia
+    Price_To_Income_Ratio: 11.4
+    Gross_Rental_Yield_City_Centre: 3.2
+    Gross_Rental_Yield_Outside_of_Centre: 3.3
+    Price_To_Rent_Ratio_City_Centre: 30.9
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 30.0
+    Mortgage_As_A_Percentage_Of_Income: 91.4
+    Affordability_Index: 1.1
+  MLT:
+    Country: Malta
+    Price_To_Income_Ratio: 11.2
+    Gross_Rental_Yield_City_Centre: 5.5
+    Gross_Rental_Yield_Outside_of_Centre: 5.8
+    Price_To_Rent_Ratio_City_Centre: 18.2
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 17.2
+    Mortgage_As_A_Percentage_Of_Income: 86.1
+    Affordability_Index: 1.2
+  PAN:
+    Country: Panama
+    Price_To_Income_Ratio: 11.2
+    Gross_Rental_Yield_City_Centre: 8.7
+    Gross_Rental_Yield_Outside_of_Centre: 9.8
+    Price_To_Rent_Ratio_City_Centre: 11.4
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 10.2
+    Mortgage_As_A_Percentage_Of_Income: 98.8
+    Affordability_Index: 1.0
+  POL:
+    Country: Poland
+    Price_To_Income_Ratio: 11.0
+    Gross_Rental_Yield_City_Centre: 4.0
+    Gross_Rental_Yield_Outside_of_Centre: 4.4
+    Price_To_Rent_Ratio_City_Centre: 24.8
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 22.6
+    Mortgage_As_A_Percentage_Of_Income: 102.1
+    Affordability_Index: 1.0
+  CHE:
+    Country: Switzerland
+    Price_To_Income_Ratio: 11.0
+    Gross_Rental_Yield_City_Centre: 2.5
+    Gross_Rental_Yield_Outside_of_Centre: 2.6
+    Price_To_Rent_Ratio_City_Centre: 40.1
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 37.8
+    Mortgage_As_A_Percentage_Of_Income: 69.6
+    Affordability_Index: 1.4
+  IND:
+    Country: India
+    Price_To_Income_Ratio: 10.9
+    Gross_Rental_Yield_City_Centre: 2.9
+    Gross_Rental_Yield_Outside_of_Centre: 3.3
+    Price_To_Rent_Ratio_City_Centre: 34.8
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 30.4
+    Mortgage_As_A_Percentage_Of_Income: 117.7
+    Affordability_Index: 0.8
+  TUR:
+    Country: Turkey
+    Price_To_Income_Ratio: 10.7
+    Gross_Rental_Yield_City_Centre: 6.7
+    Gross_Rental_Yield_Outside_of_Centre: 7.6
+    Price_To_Rent_Ratio_City_Centre: 15.0
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 13.1
+    Mortgage_As_A_Percentage_Of_Income: 423.5
+    Affordability_Index: 0.2
+  ROU:
+    Country: Romania
+    Price_To_Income_Ratio: 10.3
+    Gross_Rental_Yield_City_Centre: 4.1
+    Gross_Rental_Yield_Outside_of_Centre: 4.3
+    Price_To_Rent_Ratio_City_Centre: 24.4
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 23.2
+    Mortgage_As_A_Percentage_Of_Income: 95.2
+    Affordability_Index: 1.1
+  CRI:
+    Country: Costa Rica
+    Price_To_Income_Ratio: 10.3
+    Gross_Rental_Yield_City_Centre: 6.6
+    Gross_Rental_Yield_Outside_of_Centre: 8.3
+    Price_To_Rent_Ratio_City_Centre: 15.2
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 12.1
+    Mortgage_As_A_Percentage_Of_Income: 122.5
+    Affordability_Index: 0.8
+  FRA:
+    Country: France
+    Price_To_Income_Ratio: 10.3
+    Gross_Rental_Yield_City_Centre: 2.9
+    Gross_Rental_Yield_Outside_of_Centre: 3.4
+    Price_To_Rent_Ratio_City_Centre: 34.1
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 29.4
+    Mortgage_As_A_Percentage_Of_Income: 72.5
+    Affordability_Index: 1.4
+  CAN:
+    Country: Canada
+    Price_To_Income_Ratio: 10.2
+    Gross_Rental_Yield_City_Centre: 4.0
+    Gross_Rental_Yield_Outside_of_Centre: 5.1
+    Price_To_Rent_Ratio_City_Centre: 24.7
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 19.4
+    Mortgage_As_A_Percentage_Of_Income: 92.1
+    Affordability_Index: 1.1
+  KAZ:
+    Country: Kazakhstan
+    Price_To_Income_Ratio: 9.9
+    Gross_Rental_Yield_City_Centre: 7.8
+    Gross_Rental_Yield_Outside_of_Centre: 8.2
+    Price_To_Rent_Ratio_City_Centre: 12.9
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 12.2
+    Mortgage_As_A_Percentage_Of_Income: 177.3
+    Affordability_Index: 0.6
+  ITA:
+    Country: Italy
+    Price_To_Income_Ratio: 9.5
+    Gross_Rental_Yield_City_Centre: 4.2
+    Gross_Rental_Yield_Outside_of_Centre: 5.0
+    Price_To_Rent_Ratio_City_Centre: 23.8
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 20.0
+    Mortgage_As_A_Percentage_Of_Income: 72.7
+    Affordability_Index: 1.4
+  BGR:
+    Country: Bulgaria
+    Price_To_Income_Ratio: 9.3
+    Gross_Rental_Yield_City_Centre: 4.4
+    Gross_Rental_Yield_Outside_of_Centre: 4.7
+    Price_To_Rent_Ratio_City_Centre: 22.8
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 21.3
+    Mortgage_As_A_Percentage_Of_Income: 69.2
+    Affordability_Index: 1.4
+  DEU:
+    Country: Germany
+    Price_To_Income_Ratio: 8.9
+    Gross_Rental_Yield_City_Centre: 3.5
+    Gross_Rental_Yield_Outside_of_Centre: 3.3
+    Price_To_Rent_Ratio_City_Centre: 28.3
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 29.9
+    Mortgage_As_A_Percentage_Of_Income: 64.6
+    Affordability_Index: 1.5
+  GBR:
+    Country: United Kingdom
+    Price_To_Income_Ratio: 8.8
+    Gross_Rental_Yield_City_Centre: 4.6
+    Gross_Rental_Yield_Outside_of_Centre: 4.7
+    Price_To_Rent_Ratio_City_Centre: 21.7
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 21.3
+    Mortgage_As_A_Percentage_Of_Income: 74.2
+    Affordability_Index: 1.3
+  MYS:
+    Country: Malaysia
+    Price_To_Income_Ratio: 8.7
+    Gross_Rental_Yield_City_Centre: 3.8
+    Gross_Rental_Yield_Outside_of_Centre: 4.7
+    Price_To_Rent_Ratio_City_Centre: 26.3
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 21.1
+    Mortgage_As_A_Percentage_Of_Income: 64.1
+    Affordability_Index: 1.6
+  LUX:
+    Country: Luxembourg
+    Price_To_Income_Ratio: 8.6
+    Gross_Rental_Yield_City_Centre: 3.6
+    Gross_Rental_Yield_Outside_of_Centre: 4.0
+    Price_To_Rent_Ratio_City_Centre: 28.1
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 25.0
+    Mortgage_As_A_Percentage_Of_Income: 58.7
+    Affordability_Index: 1.7
+  LVA:
+    Country: Latvia
+    Price_To_Income_Ratio: 8.6
+    Gross_Rental_Yield_City_Centre: 3.9
+    Gross_Rental_Yield_Outside_of_Centre: 4.3
+    Price_To_Rent_Ratio_City_Centre: 26.0
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 23.4
+    Mortgage_As_A_Percentage_Of_Income: 64.1
+    Affordability_Index: 1.6
+  ESP:
+    Country: Spain
+    Price_To_Income_Ratio: 8.5
+    Gross_Rental_Yield_City_Centre: 5.3
+    Gross_Rental_Yield_Outside_of_Centre: 6.5
+    Price_To_Rent_Ratio_City_Centre: 18.7
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 15.4
+    Mortgage_As_A_Percentage_Of_Income: 59.4
+    Affordability_Index: 1.7
+  IRQ:
+    Country: Iraq
+    Price_To_Income_Ratio: 8.4
+    Gross_Rental_Yield_City_Centre: 6.0
+    Gross_Rental_Yield_Outside_of_Centre: 7.3
+    Price_To_Rent_Ratio_City_Centre: 16.6
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 13.6
+    Mortgage_As_A_Percentage_Of_Income: 86.9
+    Affordability_Index: 1.2
+  NOR:
+    Country: Norway
+    Price_To_Income_Ratio: 8.4
+    Gross_Rental_Yield_City_Centre: 3.7
+    Gross_Rental_Yield_Outside_of_Centre: 4.1
+    Price_To_Rent_Ratio_City_Centre: 27.2
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 24.4
+    Mortgage_As_A_Percentage_Of_Income: 62.9
+    Affordability_Index: 1.6
+  CYP:
+    Country: Cyprus
+    Price_To_Income_Ratio: 8.2
+    Gross_Rental_Yield_City_Centre: 6.9
+    Gross_Rental_Yield_Outside_of_Centre: 7.3
+    Price_To_Rent_Ratio_City_Centre: 14.6
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 13.7
+    Mortgage_As_A_Percentage_Of_Income: 61.2
+    Affordability_Index: 1.6
+  AUS:
+    Country: Australia
+    Price_To_Income_Ratio: 8.1
+    Gross_Rental_Yield_City_Centre: 4.3
+    Gross_Rental_Yield_Outside_of_Centre: 4.5
+    Price_To_Rent_Ratio_City_Centre: 23.4
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 22.3
+    Mortgage_As_A_Percentage_Of_Income: 71.9
+    Affordability_Index: 1.4
+  FIN:
+    Country: Finland
+    Price_To_Income_Ratio: 8.0
+    Gross_Rental_Yield_City_Centre: 3.2
+    Gross_Rental_Yield_Outside_of_Centre: 4.0
+    Price_To_Rent_Ratio_City_Centre: 30.9
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 24.7
+    Mortgage_As_A_Percentage_Of_Income: 56.7
+    Affordability_Index: 1.8
+  SWE:
+    Country: Sweden
+    Price_To_Income_Ratio: 7.7
+    Gross_Rental_Yield_City_Centre: 3.5
+    Gross_Rental_Yield_Outside_of_Centre: 4.1
+    Price_To_Rent_Ratio_City_Centre: 28.3
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 24.3
+    Mortgage_As_A_Percentage_Of_Income: 58.6
+    Affordability_Index: 1.7
+  NLD:
+    Country: Netherlands
+    Price_To_Income_Ratio: 7.7
+    Gross_Rental_Yield_City_Centre: 5.0
+    Gross_Rental_Yield_Outside_of_Centre: 5.3
+    Price_To_Rent_Ratio_City_Centre: 20.0
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 19.0
+    Mortgage_As_A_Percentage_Of_Income: 57.2
+    Affordability_Index: 1.7
+  NZL:
+    Country: New Zealand
+    Price_To_Income_Ratio: 7.3
+    Gross_Rental_Yield_City_Centre: 4.5
+    Gross_Rental_Yield_Outside_of_Centre: 4.6
+    Price_To_Rent_Ratio_City_Centre: 22.2
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 21.8
+    Mortgage_As_A_Percentage_Of_Income: 67.0
+    Affordability_Index: 1.5
+  KWT:
+    Country: Kuwait
+    Price_To_Income_Ratio: 7.3
+    Gross_Rental_Yield_City_Centre: 3.2
+    Gross_Rental_Yield_Outside_of_Centre: 5.0
+    Price_To_Rent_Ratio_City_Centre: 30.8
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 19.8
+    Mortgage_As_A_Percentage_Of_Income: 60.7
+    Affordability_Index: 1.6
+  ARE:
+    Country: United Arab Emirates
+    Price_To_Income_Ratio: 7.0
+    Gross_Rental_Yield_City_Centre: 6.2
+    Gross_Rental_Yield_Outside_of_Centre: 7.6
+    Price_To_Rent_Ratio_City_Centre: 16.2
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 13.1
+    Mortgage_As_A_Percentage_Of_Income: 53.9
+    Affordability_Index: 1.9
+  JOR:
+    Country: Jordan
+    Price_To_Income_Ratio: 7.0
+    Gross_Rental_Yield_City_Centre: 6.5
+    Gross_Rental_Yield_Outside_of_Centre: 6.9
+    Price_To_Rent_Ratio_City_Centre: 15.3
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 14.5
+    Mortgage_As_A_Percentage_Of_Income: 67.3
+    Affordability_Index: 1.5
+  BEL:
+    Country: Belgium
+    Price_To_Income_Ratio: 6.8
+    Gross_Rental_Yield_City_Centre: 4.6
+    Gross_Rental_Yield_Outside_of_Centre: 4.9
+    Price_To_Rent_Ratio_City_Centre: 21.9
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 20.3
+    Mortgage_As_A_Percentage_Of_Income: 48.0
+    Affordability_Index: 2.1
+  IRL:
+    Country: Ireland
+    Price_To_Income_Ratio: 6.7
+    Gross_Rental_Yield_City_Centre: 7.7
+    Gross_Rental_Yield_Outside_of_Centre: 8.1
+    Price_To_Rent_Ratio_City_Centre: 13.0
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 12.4
+    Mortgage_As_A_Percentage_Of_Income: 51.1
+    Affordability_Index: 2.0
+  ISL:
+    Country: Iceland
+    Price_To_Income_Ratio: 6.7
+    Gross_Rental_Yield_City_Centre: 6.1
+    Gross_Rental_Yield_Outside_of_Centre: 6.4
+    Price_To_Rent_Ratio_City_Centre: 16.3
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 15.5
+    Mortgage_As_A_Percentage_Of_Income: 74.6
+    Affordability_Index: 1.3
+  PSE:
+    Country: Palestine
+    Price_To_Income_Ratio: 6.6
+    Gross_Rental_Yield_City_Centre: 7.1
+    Gross_Rental_Yield_Outside_of_Centre: 7.2
+    Price_To_Rent_Ratio_City_Centre: 14.2
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 13.8
+    Mortgage_As_A_Percentage_Of_Income: 64.7
+    Affordability_Index: 1.5
+  DNK:
+    Country: Denmark
+    Price_To_Income_Ratio: 6.5
+    Gross_Rental_Yield_City_Centre: 4.3
+    Gross_Rental_Yield_Outside_of_Centre: 4.9
+    Price_To_Rent_Ratio_City_Centre: 23.1
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 20.5
+    Mortgage_As_A_Percentage_Of_Income: 48.1
+    Affordability_Index: 2.1
+  QAT:
+    Country: Qatar
+    Price_To_Income_Ratio: 5.2
+    Gross_Rental_Yield_City_Centre: 6.7
+    Gross_Rental_Yield_Outside_of_Centre: 6.3
+    Price_To_Rent_Ratio_City_Centre: 14.9
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 15.8
+    Mortgage_As_A_Percentage_Of_Income: 42.2
+    Affordability_Index: 2.4
+  PRI:
+    Country: Puerto Rico
+    Price_To_Income_Ratio: 4.2
+    Gross_Rental_Yield_City_Centre: 7.7
+    Gross_Rental_Yield_Outside_of_Centre: 7.8
+    Price_To_Rent_Ratio_City_Centre: 13.0
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 12.8
+    Mortgage_As_A_Percentage_Of_Income: 34.3
+    Affordability_Index: 2.9
+  USA:
+    Country: United States
+    Price_To_Income_Ratio: 3.3
+    Gross_Rental_Yield_City_Centre: 11.7
+    Gross_Rental_Yield_Outside_of_Centre: 11.4
+    Price_To_Rent_Ratio_City_Centre: 8.6
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 8.8
+    Mortgage_As_A_Percentage_Of_Income: 30.1
+    Affordability_Index: 3.3
+  ZAF:
+    Country: South Africa
+    Price_To_Income_Ratio: 3.2
+    Gross_Rental_Yield_City_Centre: 10.3
+    Gross_Rental_Yield_Outside_of_Centre: 10.7
+    Price_To_Rent_Ratio_City_Centre: 9.7
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 9.3
+    Mortgage_As_A_Percentage_Of_Income: 41.6
+    Affordability_Index: 2.4
+  OMN:
+    Country: Oman
+    Price_To_Income_Ratio: 3.1
+    Gross_Rental_Yield_City_Centre: 7.2
+    Gross_Rental_Yield_Outside_of_Centre: 6.8
+    Price_To_Rent_Ratio_City_Centre: 13.9
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 14.8
+    Mortgage_As_A_Percentage_Of_Income: 24.6
+    Affordability_Index: 4.1
+  SAU:
+    Country: Saudi Arabia
+    Price_To_Income_Ratio: 3.1
+    Gross_Rental_Yield_City_Centre: 6.3
+    Gross_Rental_Yield_Outside_of_Centre: 7.4
+    Price_To_Rent_Ratio_City_Centre: 15.9
+    Price_To_Rent_Ratio_Outside_Of_City_Centre: 13.5
+    Mortgage_As_A_Percentage_Of_Income: 24.0
+    Affordability_Index: 4.2
