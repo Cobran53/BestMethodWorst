@@ -1,0 +1,11 @@
+Victor Depoorter, Eduard Oró, Jaume Salom,
+The location as an energy efficiency and renewable energy supply measure for data centres in Europe,
+Applied Energy,
+Volume 140,
+2015,
+Pages 338-349,
+ISSN 0306-2619,
+https://doi.org/10.1016/j.apenergy.2014.11.067.
+(https://www.sciencedirect.com/science/article/pii/S0306261914012367)
+Abstract: The massive data centre energy consumption has motivated significant efforts to use energy efficiency strategies and the implementation of renewable energy sources that reduce their operational costs and environmental impact. Considering that the potential of many of these measures is often closely linked to the climate conditions, the location of data centres can have a major impact on their energy demand. Moreover, from a holistic approach, differences among regions become even more important when accounting for the electricity attributes from the grid. To assess these differences this work compares by the use of energy indicators the behaviour of a data centre located at different representative emplacements in Europe. To do so, a dynamic energy model which incorporates free cooling strategy and photovoltaic energy is developed. The paper concludes by suggesting that future data centre developments could consider site selection as a new strategy to limit the environmental impact attributable to this sector.
+Keywords: Data centre; Energy efficiency; Renewable energy supply; CO2 emissions; Modelling; Electricity mix

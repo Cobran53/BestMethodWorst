@@ -1,32 +1,32 @@
 least_important_criteria:
   air_quality_index: 9
-  company_taxes: 9
-  cost_of_living_index: 9
-  electricity_prices: 9
-  global_peace_index: 9
+  company_taxes: 1
+  cost_of_living_index: 1
+  electricity_prices: 5
+  global_peace_index: 5
   green_energy_mix_ratio: 9
-  housing_price: 9
-  human_development_index: 9
-  ideal_humidity: 1
-  land_prices: 9
-  ratio_import_electricite: 9
-  ratio_pertes_distribution: 9
-  temperature: 9
-  world_risk_index: 9
+  housing_price: 1
+  human_development_index: 5
+  ideal_humidity: 7
+  land_prices: 1
+  ratio_import_electricite: 6
+  ratio_pertes_distribution: 7
+  temperature: 7
+  world_risk_index: 6
 most_important_criteria:
   air_quality_index: 1
   company_taxes: 9
   cost_of_living_index: 9
-  electricity_prices: 9
-  global_peace_index: 9
-  green_energy_mix_ratio: 9
+  electricity_prices: 5
+  global_peace_index: 5
+  green_energy_mix_ratio: 1
   housing_price: 9
-  human_development_index: 9
-  ideal_humidity: 9
+  human_development_index: 5
+  ideal_humidity: 3
   land_prices: 9
-  ratio_import_electricite: 9
-  ratio_pertes_distribution: 9
-  temperature: 9
-  world_risk_index: 9
-reject_country_rate: 0.7
-reject_criteria_rate: 0.7
+  ratio_import_electricite: 4
+  ratio_pertes_distribution: 3
+  temperature: 3
+  world_risk_index: 4
+reject_country_rate: 0.9
+reject_criteria_rate: 0.9

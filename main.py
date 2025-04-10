@@ -12,40 +12,30 @@ import csv
 import os
 from Visualization.interactive_map import generate_interactive_map
 
-
-
 class data_compile:
     def __init__(self) -> None:
         self.isDebug = False
-        self.data: dict[Criterion, dict[Country, float|None]]
-        # Initialize the data dictionary
-        self.data = {}
-
+        self.data: dict[Criterion, dict[Country, float|None]] = {}
         self.rejectCriteriaRate = 0.5
         self.rejectCountryRate = 0.5
 
         print("Chargement des données...")
 
-        # Read all .yaml files in the ./data directory
         data_dir = "./data"
+
         for filename in os.listdir(data_dir):
             if filename.endswith(".yaml"):
-                criterion_name = os.path.splitext(filename)[0]  # Use the filename (without extension) as the criterion name
+                criterion_name = os.path.splitext(filename)[0]
                 with open(os.path.join(data_dir, filename), "r") as file:
                     self.data[criterion_name] = yaml.safe_load(file)
 
         if self.isDebug:
             pprint(self.data)
             print()
-        
-        # self.replaceCountryByCountryCode()
-
-        self.fillEmptyLines()
-
         if self.isDebug:
             pprint(self.data)
             print()
-        
+
         if self.askUserIfImport():
             self.importMICAndLIC()
             self.fillEmptyLines()
@@ -58,31 +48,25 @@ class data_compile:
 
         self.generateActualWeights()
         self.calculateScoresByCountries()
-
         if self.isDebug:
             pprint({country: float(score) for country, score in self.countriesScores.items()})
 
     def replaceCountryByCountryCode(self):
-        
-        # Load the country codes from the CSV file
         self.country_code_map = {}
         with open("country_code.csv", "r", encoding="utf-8") as csvfile:
             reader = csv.reader(csvfile, delimiter=';')
-            next(reader)  # Skip the header row
+            next(reader)
             for row in reader:
-                country_code = row[-1]  # The last column contains the country code
-                for name in row[:-1]:  # Iterate over all alternate names
-                    if name:  # Skip empty names
+                country_code = row[-1]
+                for name in row[:-1]:
+                    if name:
                         self.country_code_map[name.strip()] = country_code
-
-        # Replace country names in self.data with their corresponding country codes
         for criteria in self.data:
             updated_data = {}
             for country, value in self.data[criteria].items():
-                country_code = self.country_code_map.get(country, country)  # Default to the original name if not found
-                if country_code == country:  # If no replacement was made
+                country_code = self.country_code_map.get(country, country)
+                if country_code == country:
                     print(f"Failed to replace country name: {country}")
-            
             updated_data[country_code] = value
             self.data[criteria] = updated_data
 
@@ -96,9 +80,9 @@ class data_compile:
     def askRejectRates(self):
         print("Les critères de rejet actuels sont définis à 0.5 par défaut.")
         print("Le taux de rejet des critères détermine le % minimum de données nécessaires pour conserver un critère.")
+
         while True:
             try:
-                
                 reject_criteria_rate = float(input("Entrez le taux de rejet des critères (entre 0 et 1) : "))
                 if 0 <= reject_criteria_rate <= 1:
                     self.rejectCriteriaRate = reject_criteria_rate
@@ -107,7 +91,9 @@ class data_compile:
                     print("Veuillez entrer une valeur entre 0 et 1.")
             except ValueError:
                 print("Entrée invalide. Veuillez entrer un nombre.")
+
         print("Même fonctionnement pour le taux de rejet des pays.")
+
         while True:
             try:
                 reject_country_rate = float(input("Entrez le taux de rejet des pays (entre 0 et 1) : "))
@@ -121,11 +107,12 @@ class data_compile:
 
     def importMICAndLIC(self):
         root = Tk()
-        root.withdraw()  # Masquer la fenêtre principale
-        root.update()  # S'assurer que la fenêtre est correctement initialisée
+        root.withdraw()
+        root.update()
         root.attributes('-topmost', True)
+
         file_path = filedialog.askopenfilename(title="Sélectionnez le fichier des poids des critères", filetypes=[("Fichiers YAML", "*.yaml")])
-        
+
         if file_path:
             with open(file_path, "r") as file:
                 weights = yaml.safe_load(file)
@@ -140,9 +127,8 @@ class data_compile:
         root.destroy()          
 
     def fillEmptyLines(self):
-        
-        # Rejeter les critères où on a pas assez de données
         criteria_to_delete = []
+
         for criteria in self.data:
             country_data_count = sum(1 for country in self.data[criteria] if country in self.data[criteria] and self.data[criteria][country] is not None)
             if country_data_count / len(self.data[criteria].keys()) < self.rejectCriteriaRate:
@@ -153,23 +139,21 @@ class data_compile:
             print(f"Critère \"{criteria}\" supprimé : pas assez de données ({missing_percentage:.2f}% manquantes)")
             del self.data[criteria]
 
-        # Rejeter les pays où on a pas assez de données     
         first_criteria = next(iter(self.data))
 
         countries_to_remove = []
+
         for country in self.data[first_criteria].keys():
             criteria_data_count = sum(1 for criteria in self.data if country in self.data[criteria] and self.data[criteria][country] is not None)
             if criteria_data_count / len(self.data) < self.rejectCountryRate:
                 countries_to_remove.append(country)
 
-
         for country in countries_to_remove:
             missing_percentage = 100 * (1 - criteria_data_count / len(self.data))
             print(f"Pays \"{country}\" supprimé : pas assez de données ({missing_percentage:.2f}% manquantes)")
             for criteria in self.data:
-                self.data[criteria].pop(country, None)  # Safely remove the country if it exists
+                self.data[criteria].pop(country, None)
 
-        # Remplacer par la moyenne dans les critères ou on a assez de données mais pas toutes 
         for criteria in self.data:
             values = [self.data[criteria][country] for country in self.data[criteria] if self.data[criteria][country] is not None]
             numeric_values = [v for v in values if isinstance(v, (int, float))]
@@ -179,16 +163,14 @@ class data_compile:
                     self.data[criteria][country] = mean_value
 
     def generateMostImportantCriteriaWeights(self) -> dict[Criterion, Note]:
-        self.mostImportantCriteria: Criterion # nous déterminons qu'un des critères est le plus important
-        self.mostImportantCriteriaNotes: dict[Criterion, Note] # pour chaque autre critère,
-        # nous donnons une note sur leur importance par rapport au meilleur
-
+        self.mostImportantCriteria: Criterion
+        self.mostImportantCriteriaNotes: dict[Criterion, Note]
         criteria = sorted(self.data.keys())
-        
         print("Veuillez choisir le critère le plus important :")
+
         for i, crit in enumerate(criteria, 1):
             print(f"{i}. {crit}")
-        
+
         while True:
             try:
                 choice = int(input("Entrez le numéro du critère le plus important : ")) - 1
@@ -199,13 +181,14 @@ class data_compile:
                     print("Choix invalide. Veuillez entrer un numéro correspondant au critère.")
             except ValueError:
                 print("Entrée invalide. Veuillez entrer un numéro valide.")
+
         self.mostImportantCriteria = criteria[choice]
-        
         self.mostImportantCriteriaNotes = {self.mostImportantCriteria: 1}
 
         print("Évaluez l'importance de chaque critère par rapport au critère le plus important, de 1 à 9, avec \n" 
               "• 1 : le meilleur critère est aussi important que ce critère, \n"
               "• 9 : le meilleur critère est extremement plus important que ce critère.\n")
+        
         for crit in criteria:
             if crit != self.mostImportantCriteria:
                 while True:
@@ -221,15 +204,16 @@ class data_compile:
                 self.mostImportantCriteriaNotes[crit] = note
 
     def generateLeastImportantCriteriaWeights(self) -> dict[Criterion, Note]:
-        self.leastImportantCriteria: Criterion # idem pour le pire
-        self.leastImportantCriteriaNotes: dict[Criterion, Note] 
+        self.leastImportantCriteria: Criterion
+        self.leastImportantCriteriaNotes: dict[Criterion, Note]
 
         criteria = sorted(self.data.keys())
-        
+
         print("Veuillez choisir le critère le moins important :")
+
         for i, crit in enumerate(criteria, 1):
             print(f"{i}. {crit}")
-        
+
         while True:
             try:
                 choice = int(input("Entrez le numéro du critère le moins important : ")) - 1
@@ -239,13 +223,14 @@ class data_compile:
                     print("Choix invalide. Veuillez entrer un numéro correspondant au critère.")
             except ValueError:
                 print("Entrée invalide. Veuillez entrer un numéro valide.")
+
         self.leastImportantCriteria = criteria[choice]
-        
         self.leastImportantCriteriaNotes = {self.leastImportantCriteria: 1}
 
         print("Évaluez l'importance de chaque critère par rapport au critère le moins important, de 1 à 9, avec \n" 
               "• 1 : le pire critère est aussi important que ce critère, \n"
               "• 9 : le pire critère est extrêmement moins important que ce critère.\n")
+        
         for crit in criteria:
             if crit != self.leastImportantCriteria:
                 while True:
@@ -260,7 +245,6 @@ class data_compile:
                         print("Entrée invalide. Veuillez entrer un numéro valide.")
                 self.leastImportantCriteriaNotes[crit] = note
 
-
     def saveMICAndLIC(self):
         with open("criteria_weights.yaml", "w") as file:
             yaml.dump({
@@ -271,15 +255,13 @@ class data_compile:
             }, file)
 
     def generateActualWeights(self) -> dict[Criterion, float]:
-        self.actualWeights: dict[Criterion, float] # utiliser l'exemple BWM pour générer les poids pour chaque critère
+        self.actualWeights: dict[Criterion, float]
 
         criteria = sorted(self.mostImportantCriteriaNotes.keys())
-        
         mic = np.array([self.mostImportantCriteriaNotes[crit] for crit in criteria])
         lic = np.array([self.leastImportantCriteriaNotes[crit] for crit in criteria])
-        
         weights = bw_method(mic, lic, eps_penalty=1, verbose=True or self.isDebug)
-        
+
         self.actualWeights = {crit: weights[i] for i, crit in enumerate(criteria)}
 
         if self.isDebug:
@@ -292,7 +274,6 @@ class data_compile:
             ) for country in self.data[next(iter(self.data))].keys()
         }
 
-        # Normalize scores by setting the minimum score to 0 and adjusting all others
         min_score = min(self.countriesScores.values())
         self.countriesScores = {country: score - min_score for country, score in self.countriesScores.items()}
 
@@ -308,11 +289,9 @@ class data_compile:
 
         with open("./Visualization/output.yaml", "w") as file:
             yaml.dump({country: float(score) for country, score in self.countriesScores.items()}, file)
-
+            
         print("Le fichier de données output.yaml a été créé avec succès.")
-
         generate_interactive_map()
-
         return self.countriesScores
     
 A = data_compile()
